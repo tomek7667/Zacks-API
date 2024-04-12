@@ -1,4 +1,4 @@
-# zacks-api
+# zacks-api-2
 
 Unofficial library for programmatic access to zacks ranking page.
 
@@ -7,13 +7,13 @@ Unofficial library for programmatic access to zacks ranking page.
 Install the package
 
 ```bash
-yarn add zacks-api
+yarn add zacks-api-2
 ```
 
 or
 
 ```bash
-npm install zacks-api
+npm install zacks-api-2
 ```
 
 ## 📖 Getting Started
@@ -24,9 +24,9 @@ Once it has been installed, it can easily be imported in your project, depending
 
 ```js
 // Common js module
-const { getQuote } = require("zacks-api");
+const { getQuote } = require("zacks-api-2");
 // ESM module
-import { getQuote } from "zacks-api";
+import { getQuote } from "zacks-api-2";
 ```
 
 ## Usage

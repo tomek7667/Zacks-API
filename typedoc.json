@@ -1,6 +1,6 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "name": "zacks-api",
+  "name": "zacks-api-2",
   "tsconfig": "tsconfig.json",
   "entryPoints": ["src"],
   "out": "docs",
