@@ -1,6 +1,6 @@
 # zacks-api-2
 
-Unofficial library for programmatic access to zacks ranking page.
+Unofficial library for programmatic access to zacks ranking page. Any feature requests in `Issues` tab are more than welcome! :)
 
 ## ▶️ Use
 
@@ -31,10 +31,24 @@ import { getQuote } from "zacks-api-2";
 
 ## Usage
 
-### Example
+### `getQuote`
+
+Used to retrieve zacks rank on a symbol. Can be extended to include information about each rank. Throws an error when the symbol is not found.
 
 ```ts
-// TODO:
+const quote = await getQuote("AAPL");
+console.log(quote.rank)
+// 3
+
+const quoteExtended = await getQuote("AAPL", { extended: true });
+console.log(quote.zrankRows)
+// [
+//     { rank: 1, definition: 'Strong Buy', annualizedReturn: 0.2415 },
+//     { rank: 2, definition: 'Buy', annualizedReturn: 0.18 },
+//     { rank: 3, definition: 'Hold', annualizedReturn: 0.0944 },
+//     { rank: 4, definition: 'Sell', annualizedReturn: 0.051 },
+//     { rank: 5, definition: 'Strong Sell', annualizedReturn: 0.0253 }
+// ]
 ```
 
 ## 💻 Development
